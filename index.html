@@ -1,67 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIROBI IT Solutions</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .section { background: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .ceo { display: flex; align-items: center; }
-        .ceo img { border-radius: 50%; width: 150px; margin-right: 20px; }
-        footer { background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIROBI IT Solutions</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #007BFF;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #007BFF;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .services, .team, .contact {
+      margin-bottom: 40px;
+    }
+
+    .service-item, .team-member {
+      background: #f4f4f4;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 15px;
+      float: left;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to MIROBI IT Solutions</h1>
-        <p>Your Trusted IT Consulting Partner</p>
-    </header>
-    
-    <div class="container">
-        <div class="section">
-            <h2>About Us</h2>
-            <p>We are two IT professionals, recently graduated, bringing our expertise to help businesses with IT solutions.</p>
-            <p><b>Our Mission:</b> To provide professional IT consulting and support for businesses and individuals.</p>
-        </div>
-        
-        <div class="section ceo">
-            <img src="ceo1.jpg" alt="CEO 1">
-            <div>
-                <h3>Founder & CEO - [Your Name]</h3>
-                <p>Experienced in IT consulting and business solutions.</p>
-            </div>
-        </div>
-        
-        <div class="section ceo">
-            <img src="ceo2.jpg" alt="CEO 2">
-            <div>
-                <h3>Co-Founder - [Friend's Name]</h3>
-                <p>Expert in software development and IT strategies.</p>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Our Services</h2>
-            <ul>
-                <li>IT Consulting & Strategy</li>
-                <li>Technical Support & Troubleshooting</li>
-                <li>Software & Web Development Guidance</li>
-                <li>Business IT Solutions</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Contact Us</h2>
-            <p>Email: contact@mirobiit.com</p>
-            <p>Address: [Your Office Address]</p>
-        </div>
+  <!-- Header -->
+  <header>
+    <h1>MIROBI IT Solutions</h1>
+    <p>Your Trusted IT Consulting Partner</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#team">Our Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>MIROBI IT Solutions is a graduate-founded IT consulting firm dedicated to delivering tailored solutions and expert guidance to meet your unique business needs. Our goal is to provide the best suggestions and optimal results based on your requirements.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+      <h3>IT Consulting</h3>
+      <p>Expert advice to optimize your IT infrastructure.</p>
     </div>
-    
-    <footer>
-        <p>&copy; 2025 MIROBI IT Solutions. All rights reserved.</p>
-    </footer>
+    <div class="service-item">
+      <h3>System Optimization</h3>
+      <p>Enhance the performance of your systems.</p>
+    </div>
+    <div class="service-item">
+      <h3>Technical Support</h3>
+      <p>24/7 support to resolve your IT issues.</p>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section id="team" class="team">
+    <h2>Our Team</h2>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Team Member 1">
+      <h3>Your Name</h3>
+      <p>Co-Founder & IT Consultant</p>
+    </div>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Team Member 2">
+      <h3>Friend's Name</h3>
+      <p>Co-Founder & IT Consultant</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@mirobit.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Address: 123 IT Street, Tech City, Country</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 MIROBI IT Solutions. All rights reserved.</p>
+  </footer>
 </body>
 </html>
