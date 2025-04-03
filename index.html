@@ -47,6 +47,10 @@
       justify-content: center;
       gap: 20px;
     }
+    .team.vertical {
+      flex-direction: column;
+      align-items: center;
+    }
     .team-member, .service-box {
       width: 250px;
       background: #f9f9f9;
@@ -162,9 +166,23 @@
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
+        </div>
+        <div class="team-member">
+          <img src="images/momin.jpg" alt="Mir Abdullah Momin">
+          <h4>Mir Abdullah Momin</h4>
+          <p>Co-Founder & Operations Advisor</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Updated Our Team Section -->
     <section id="team-members">
       <h2>Our Team</h2>
-      <div class="team">
+      <div class="team vertical">
         <div class="team-member">
           <img src="images/member1.jpg" alt="Team Member 1">
           <h4>Member Name</h4>
@@ -203,25 +221,14 @@
         </div>
       </div>
     </section>
-        </div>
-        <div class="team-member">
-          <img src="images/momin.jpg" alt="Mir Abdullah Momin">
-          <h4>Mir Abdullah Momin</h4>
-          <p>Co-Founder & Operations Advisor</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section id="contact">
       <h2>Contact Us</h2>
       <p><strong>Office Address:</strong> Kushtia City, Bangladesh</p>
       <p><strong>Phone:</strong> +8801XXXXXXXXX</p>
       <p><strong>Email:</strong> info@example.com</p>
       <iframe src="https://www.google.com/maps?q=Kushtia%20City,%20Bangladesh&output=embed" allowfullscreen></iframe>
-      <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbxaZIV3qlNWU3jjJBIYF0wT8oy5YgYn0hR4PQGiPoYrYBgpfiVnjzP6g_Ks5nEG/exec">
+      <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbxCo6alGk4HskLAW09zTPJ7BKlRP2byGLL0KbQ5XsHfBP54uh49yakeFzdE7AB4QEhL/exec">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Your Email</label>
