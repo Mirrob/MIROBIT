@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <!-- If using PNG format -->
   <!-- <link rel="icon" href="images/favicon.png" type="image/png"> -->
@@ -13,17 +13,18 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f2f6fa;
+      background: #f5f7fa;
       color: #333;
       transition: background 0.3s, color 0.3s;
     }
-    body.dark-mode { background: #1e1e2f; color: #f0f0f0; }
+    body.dark-mode { background: #2c3e50; color: #ecf0f1; }
     header {
-      background: linear-gradient(135deg, #0066cc, #00b4d8);
+      background: linear-gradient(135deg, #3498db, #8e44ad);
       color: white;
-      padding: 50px 0;
+      padding: 60px 0;
       text-align: center;
-      border-bottom: 4px solid #00b4d8;
+      border-bottom: 4px solid #8e44ad;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     }
     header img {
       max-width: 160px;
@@ -32,14 +33,25 @@
       border-radius: 50%;
       border: 2px solid white;
     }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
     nav {
-      background: #003366;
+      background: #2c3e50;
       text-align: center;
       padding: 15px 0;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     }
     nav a {
-      color: #fff;
+      color: #ecf0f1;
       text-decoration: none;
       margin: 0 20px;
       font-weight: bold;
@@ -49,7 +61,7 @@
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #00b4d8;
+      color: #3498db;
     }
     .container {
       width: 90%;
@@ -63,7 +75,7 @@
       margin-bottom: 30px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     }
-    body.dark-mode section { background: #2e2e42; }
+    body.dark-mode section { background: #34495e; }
     .team, .services {
       display: flex;
       flex-wrap: wrap;
@@ -72,7 +84,7 @@
     }
     .team-member, .service-box {
       width: 260px;
-      background: #f9f9f9;
+      background: #ecf0f1;
       padding: 20px;
       border-radius: 12px;
       text-align: center;
@@ -83,16 +95,21 @@
       transform: translateY(-10px); 
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
     }
-    body.dark-mode .team-member, body.dark-mode .service-box { background: #3a3a52; }
+    body.dark-mode .team-member, body.dark-mode .service-box { background: #7f8c8d; }
     .team-member img, .service-box img {
       width: 100%;
       border-radius: 12px;
       margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .team-member img:hover, .service-box img:hover {
+      transform: scale(1.05);
     }
     .team-member h4, .service-box h3 { 
       margin-top: 12px; 
-      color: #0066cc;
+      color: #3498db;
       font-size: 1.3rem;
+      font-weight: 600;
     }
     .team-member p, .service-box p {
       font-size: 1rem;
@@ -102,11 +119,11 @@
       margin: 0 8px;
       text-decoration: none;
       font-size: 22px;
-      color: #0066cc;
+      color: #3498db;
       transition: color 0.3s ease;
     }
     .social-icons a:hover {
-      color: #00b4d8;
+      color: #8e44ad;
     }
     form { 
       display: flex; 
@@ -127,7 +144,7 @@
     }
     form button {
       padding: 12px;
-      background: #0066cc;
+      background: #3498db;
       color: white;
       border: none;
       border-radius: 6px;
@@ -136,7 +153,7 @@
       transition: background 0.3s ease;
     }
     form button:hover {
-      background: #003366;
+      background: #2980b9;
     }
     iframe {
       width: 100%;
@@ -150,7 +167,7 @@
       text-align: center;
     }
     .lang-toggle button, .theme-toggle button {
-      background: #00b4d8;
+      background: #3498db;
       border: none;
       padding: 12px 20px;
       margin: 0 15px;
@@ -161,7 +178,18 @@
       transition: background 0.3s ease;
     }
     .lang-toggle button:hover, .theme-toggle button:hover {
-      background: #003366;
+      background: #2980b9;
+    }
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    }
+    footer p {
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -239,7 +267,7 @@
     <!-- Our Team Section -->
     <section id="team-members">
       <h2 id="team-members-heading">Our Team</h2>
-      <div class="team vertical">
+      <div class="team">
         <div class="team-member">
           <img src="images/member1.jpg" alt="Team Member 1">
           <h4 id="member1-name">Suhin Ahmad Rubel</h4>
@@ -269,7 +297,7 @@
         </div>
         <div class="team-member">
           <img src="images/member4.jpg" alt="Team Member 4">
-          <h4 id="member4-name">Ehsan Kabir Abir.</h4>
+          <h4 id="member4-name">Ehsan Kabir Abir</h4>
           <p id="member4-position">Graphic Designer</p>
           <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -303,7 +331,6 @@
     <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
   </div>
 </section>
-
 
   </div>
   <footer>
@@ -352,7 +379,7 @@
         "services-heading": "আমাদের সেবা",
         "web-design-title": "ওয়েব ডিজাইন",
         "web-design-description": "আমরা আধুনিক, প্রতিক্রিয়া-সক্ষম এবং ব্যবহারকারী-বান্ধব ওয়েবসাইট তৈরি করি যা কেবল সুন্দর দেখায় না, তবে ব্যবসায়িক লক্ষ্য অর্জনের জন্য কার্যকরভাবে ডিজাইন করা হয়।",
-        "data-entry-title": "ডেটা এন্ট্রি",
+        "data-entry-title": "ডাটা এন্ট্রি",
         "data-entry-description": "আমাদের সঠিক এবং কার্যকরী ডেটা এন্ট্রি সমাধানগুলি সমস্ত ধরণের শিল্পের সহায়ক, আপনার ব্যবসার তথ্য সর্বদা সুশৃঙ্খল, প্রবেশযোগ্য এবং নিরাপদ রাখে।",
         "bpo-title": "BPO",
         "bpo-description": "আমরা নির্ভরযোগ্য আউটসোর্সিং পরিষেবাগুলি সরবরাহ করি একটি দক্ষ কর্মী বাহিনীর সাথে, যার ফলে আপনি অপারেশনাল খরচ কমাতে পারবেন এবং উচ্চ পরিষেবা মান বজায় রাখবেন।",
