@@ -13,97 +13,132 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f4f8;
+      background: #f9f9f9;
       color: #333;
       transition: background 0.3s, color 0.3s;
     }
     body.dark-mode { background: #1e1e2f; color: #f0f0f0; }
     header {
-      background: linear-gradient(135deg, #0052cc, #00b4d8);
+      background: linear-gradient(135deg, #0066cc, #00b4d8);
       color: white;
       padding: 40px 0;
       text-align: center;
+      border-bottom: 4px solid #00b4d8;
     }
     header img {
-      max-width: 150px; /* Adjusted logo size to fit better */
+      max-width: 150px;
       height: auto;
       margin-bottom: 20px;
+      border-radius: 50%;
+      border: 2px solid white;
     }
     nav {
-      background: #003366;
+      background: linear-gradient(135deg, #003366, #0066cc);
       text-align: center;
-      padding: 10px 0;
+      padding: 15px 0;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
     }
-    nav a:hover { color: #00b4d8; }
-    .container { width: 90%; max-width: 1200px; margin: 20px auto; }
+    nav a:hover {
+      color: #00b4d8;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
     section {
       background: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     body.dark-mode section { background: #2e2e42; }
     .team, .services {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-    }
-    .team.vertical {
-      flex-direction: column;
-      align-items: center;
+      gap: 25px;
     }
     .team-member, .service-box {
-      width: 250px;
-      background: #f9f9f9;
-      padding: 15px;
+      width: 280px;
+      background: #f1f1f1;
+      padding: 20px;
       border-radius: 8px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .team-member:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    .team-member:hover, .service-box:hover { 
+      transform: translateY(-5px); 
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2); 
+    }
     body.dark-mode .team-member, body.dark-mode .service-box { background: #3a3a52; }
     .team-member img, .service-box img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 50%;
+      margin-bottom: 20px;
     }
-    .team-member h4, .service-box h3 { margin-top: 10px; color: #0052cc; }
-    .social-icons { margin-top: 10px; }
+    .team-member h4, .service-box h3 { 
+      margin-top: 10px; 
+      color: #0066cc;
+      font-size: 1.2rem;
+    }
+    .team-member p, .service-box p {
+      font-size: 1rem;
+      color: #666;
+    }
     .social-icons a {
       margin: 0 5px;
       text-decoration: none;
       font-size: 18px;
-      color: #0052cc;
+      color: #0066cc;
+      transition: color 0.3s ease;
     }
-    .social-icons a:hover { color: #00b4d8; }
-    form { display: flex; flex-direction: column; }
-    form label { margin: 10px 0 5px; }
+    .social-icons a:hover {
+      color: #00b4d8;
+    }
+    form { 
+      display: flex; 
+      flex-direction: column; 
+      margin-top: 20px; 
+    }
+    form label { 
+      margin: 10px 0 5px; 
+      font-weight: bold; 
+    }
     form input, form textarea {
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1rem;
+      margin-bottom: 15px;
     }
     form button {
-      margin-top: 15px;
-      padding: 10px;
-      background: #0052cc;
+      padding: 15px;
+      background: #0066cc;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
     }
-    form button:hover { background: #003366; }
+    form button:hover {
+      background: #003366;
+    }
     iframe {
       width: 100%;
-      height: 300px;
+      height: 350px;
       border: 0;
       border-radius: 8px;
       margin-top: 15px;
@@ -115,11 +150,16 @@
     .lang-toggle button, .theme-toggle button {
       background: #00b4d8;
       border: none;
-      padding: 8px 16px;
-      margin: 0 5px;
+      padding: 10px 20px;
+      margin: 0 10px;
       color: white;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    .lang-toggle button:hover, .theme-toggle button:hover {
+      background: #003366;
     }
   </style>
 </head>
@@ -137,15 +177,14 @@
   </nav>
   <div class="container">
     <section id="about">
-  <h2 id="about-heading">About Us</h2>
-  <p id="about-description" style="text-align: justify;">
-    <strong>MIROBI Solutions</strong> is a dynamic IT service company founded by 
-    <strong>Md Robiul Islam</strong> and <strong>Mir Abdullah Momin</strong>, driven by a shared vision to empower businesses through 
-    innovative and cost-effective technology solutions. With a strong understanding of the digital landscape, our mission is to deliver 
-    impactful, scalable, and affordable IT services that help businesses grow, streamline operations, and remain competitive in a rapidly evolving market.
-  </p>
-</section>
-
+      <h2 id="about-heading">About Us</h2>
+      <p id="about-description" style="text-align: justify;">
+        <strong>MIROBI Solutions</strong> is a dynamic IT service company founded by 
+        <strong>Md Robiul Islam</strong> and <strong>Mir Abdullah Momin</strong>, driven by a shared vision to empower businesses through 
+        innovative and cost-effective technology solutions. With a strong understanding of the digital landscape, our mission is to deliver 
+        impactful, scalable, and affordable IT services that help businesses grow, streamline operations, and remain competitive in a rapidly evolving market.
+      </p>
+    </section>
     <section id="services">
       <h2 id="services-heading">Our Services</h2>
       <div class="services">
@@ -240,9 +279,9 @@
 
    <section id="contact">
   <h2 id="contact-heading">Contact Us</h2>
-  <p><strong>Office Address:</strong> Kushtia City, Bangladesh</p>
+  <p><strong>Office Address:</strong> Islamia College Rd, Kushtia City, Bangladesh</p>
   <p><strong>Phone:</strong> +8801327224264</p>
-  <p><strong>Email:</strong> info@example.com</p>
+  <p><strong>Email:</strong> mirobitsolution@gmail.com </p>
   <iframe src="https://www.google.com/maps?q=Kushtia%20City,%20Bangladesh&output=embed" allowfullscreen></iframe>
   <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbxCo6alGk4HskLAW09zTPJ7BKlRP2byGLL0KbQ5XsHfBP54uh49yakeFzdE7AB4QEhL/exec">
     <label for="name">Your Name</label>
